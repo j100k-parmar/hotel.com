@@ -1,199 +1,312 @@
-                                    * {
-                                        margin: 0;
-                                        padding: 0;
-                                        box-sizing: border-box;
-                                    }
-                                    
-                                    body {
-                                        font-family: 'Noto Sans JP', sans-serif;
-                                    }
-                                    
-                                    .banner {
-                                        width: 100%;
-                                        height: 100vh;
-                                        background-image: url(../img/hilltop-hero.jpg);
-                                        background-repeat: no-repeat;
-                                    }
-                                    
-                                    .contact_info {
-                                        position: absolute;
-                                        right: 60px;
-                                        color: #c29039;
-                                        background-color: white;
-                                        padding: 2px 4px;
-                                        border-radius: 0 0 10px 10px;
-                                    }
-                                    
-                                    .data ul li a {
-                                        text-decoration: none;
-                                    }
-                                    
-                                    .menu {
-                                        margin: 30px 0 0 110px;
-                                    }
-                                    
-                                    .menu ul li {
-                                        padding-left: 20px;
-                                    }
-                                    /* .menu ul li a:hover {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/hilltop-hero.jpg);
+    background-repeat: no-repeat;
+}
+
+.contact_info {
+    position: absolute;
+    right: 60px;
+    color: #c29039;
+    background-color: white;
+    padding: 2px 4px;
+    border-radius: 0 0 10px 10px;
+}
+
+.data ul li a {
+    text-decoration: none;
+}
+
+.menu {
+    margin: 30px 0 0 110px;
+}
+
+.menu ul li {
+    padding-left: 20px;
+}
+
+
+/* .menu ul li a:hover {
                                 background-color: white;
                                 color: #c29039;
                             } */
-                                    
-                                    .menu ul li a {
-                                        text-decoration: none;
-                                    }
-                                    
-                                    .enquiry a {
-                                        background-color: #c29039;
-                                    }
-                                    
-                                    .logo {
-                                        width: 15%;
-                                        height: 15%;
-                                        border-radius: 50%;
-                                    }
-                                    
-                                    .logo img {
-                                        width: 100%;
-                                    }
-                                    
-                                    .enquiry {
-                                        background-color: white;
-                                        position: absolute;
-                                        bottom: 50px;
-                                        left: 50px;
-                                    }
-                                    
-                                    .about h1 {
-                                        color: #c29039;
-                                    }
-                                    
-                                    .about p {
-                                        color: gray;
-                                    }
-                                    
-                                    .accomodation {
-                                        color: gray;
-                                    }
-                                    
-                                    .facility {
-                                        background-color: rgb(217, 217, 245);
-                                    }
-                                    
-                                    .read a {
-                                        background-color: #c29039;
-                                    }
-                                    
-                                    .s {
-                                        width: 150px;
-                                        height: 150px;
-                                        border: 2px solid gray;
-                                        color: gray;
-                                        padding: 30px;
-                                        margin: 30px;
-                                        background-color: rgb(217, 217, 245);
-                                    }
-                                    
-                                    .booking {
-                                        background-color: rgb(217, 217, 245);
-                                    }
-                                    
-                                    .booking a {
-                                        background-color: #c29039;
-                                    }
-                                    
-                                    .prev,
-                                    .next {
-                                        margin: 10px;
-                                        width: 50px;
-                                        height: 50px;
-                                        border: 1px solid gray;
-                                        color: #c29039;
-                                    }
-                                    
-                                    .prev:hover {
-                                        border: 2px solid black;
-                                    }
-                                    
-                                    .next:hover {
-                                        border: 2px solid black;
-                                    }
-                                    
-                                    .social div {
-                                        width: 50px;
-                                        height: 50px;
-                                        border: 2px solid white;
-                                    }
-                                    
-                                    .address_info {
-                                        background-color: #c29039;
-                                    }
-                                    /* stay.html */
-                                    
-                                    .stay {
-                                        background-image: url(../img/stay_banner.jpeg);
-                                        background-repeat: no-repeat;
-                                        height: 100vh;
-                                        background-size: cover;
-                                    }
-                                    
-                                    .stay_about h1,
-                                    .photos h1 {
-                                        color: #c29039;
-                                    }
-                                    
-                                    .stay_about p,
-                                    .photos p {
-                                        color: gray;
-                                        font-size: 20px;
-                                    }
-                                    
-                                    .service {
-                                        color: gray;
-                                    }
-                                    /* gallary.html */
-                                    
-                                    .gallary {
-                                        background-image: url(../img/gallary_banner.jpeg);
-                                        background-repeat: no-repeat;
-                                        background-size: cover;
-                                        height: 100vh;
-                                    }
-                                    /* contact.html */
-                                    
-                                    .contact_page h1 {
-                                        color: #c29039;
-                                    }
-                                    /* Responsive */
-                                    
-                                    @media only screen and (max-width:428px) {
-                                        nav {
-                                            display: none;
-                                        }
-                                        .enquiry input {
-                                            margin: 10px 0;
-                                            width: 50%;
-                                        }
-                                        .enquiry {
-                                            bottom: 0;
-                                            left: 0;
-                                            text-align: center;
-                                        }
-                                        .enquiry select {
-                                            width: 50%;
-                                        }
-                                        .logo {
-                                            width: 100%;
-                                            height: 15%;
-                                            margin-top: 32px;
-                                            border-radius: 50%;
-                                        }
-                                        .accomodation .row {
-                                            flex-direction: column;
-                                        }
-                                        .services {
-                                            overflow: auto;
-                                            white-space: nowrap;
-                                        }
-                                    }
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+.enquiry a {
+    background-color: #c29039;
+}
+
+.logo {
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.enquiry {
+    background-color: white;
+    position: absolute;
+    bottom: 50px;
+}
+
+.about h1 {
+    color: #c29039;
+}
+
+.about p {
+    color: gray;
+}
+
+.accomodation {
+    color: gray;
+}
+
+.facility {
+    background-color: rgb(217, 217, 245);
+}
+
+.read a {
+    background-color: #c29039;
+}
+
+.s {
+    width: 150px;
+    height: 150px;
+    border: 2px solid gray;
+    color: gray;
+    padding: 30px;
+    margin: 30px;
+    background-color: rgb(217, 217, 245);
+}
+
+.booking {
+    background-color: rgb(217, 217, 245);
+}
+
+.booking a {
+    background-color: #c29039;
+}
+
+.prev,
+.next {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    color: #c29039;
+}
+
+.prev:hover {
+    border: 2px solid black;
+}
+
+.next:hover {
+    border: 2px solid black;
+}
+
+.social div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+}
+
+.address_info {
+    background-color: #c29039;
+}
+
+
+/* stay.html */
+
+.stay {
+    background-image: url(../img/stay_banner.jpeg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.stay_about h1,
+.photos h1 {
+    color: #c29039;
+}
+
+.stay_about p,
+.photos p {
+    color: gray;
+    font-size: 20px;
+}
+
+.service {
+    color: gray;
+}
+
+
+/* gallary.html */
+
+.gallary {
+    background-image: url(../img/gallary_banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* contact.html */
+
+.contact_page h1 {
+    color: #c29039;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+span {
+    display: none;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width:428px) {
+    .overlay {
+        display: block;
+    }
+    span {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .enquiry input {
+        margin: 10px 0;
+        width: 75%;
+    }
+    .enquiry {
+        bottom: 20px;
+        left: 0;
+        top: 177px;
+        text-align: center;
+        clear: both;
+    }
+    .enquiry select {
+        width: 75%;
+    }
+    .logo {
+        width: 50%;
+        height: 15%;
+        margin: auto;
+        padding-top: 30px;
+        border-radius: 50%;
+    }
+    .accomodation .row {
+        flex-direction: column;
+    }
+    .services {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .s {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .address_info .row {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .hotel_packages .row {
+        flex-direction: column;
+    }
+    .photos .row {
+        flex-direction: column;
+    }
+    .contact {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    .enquiry input {
+        margin: 10px 5px;
+        padding: 15px 0;
+        width: 30%;
+    }
+    .enquiry select {
+        width: 30%;
+        padding: 15px 0;
+    }
+}
