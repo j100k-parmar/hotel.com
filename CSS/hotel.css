@@ -299,7 +299,7 @@ span {
     }
 }
 
-@media only screen and (max-width:770px) {
+@media only screen and (min-width:428px) and (max-width:770px) {
     .enquiry {
         margin-left: 30px;
     }
@@ -338,7 +338,7 @@ span {
     }
 }
 
-@media only screen and (max-width:1028px) {
+@media only screen and (min-width:770px) and (max-width:1028px) {
     .enquiry {
         left: 90px;
         justify-content: center;
