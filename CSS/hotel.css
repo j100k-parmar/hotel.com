@@ -300,13 +300,65 @@ span {
 }
 
 @media only screen and (max-width:770px) {
-    .enquiry input {
-        margin: 10px 5px;
-        padding: 15px 0;
-        width: 30%;
+    .enquiry {
+        margin-left: 30px;
     }
-    .enquiry select {
-        width: 30%;
-        padding: 15px 0;
+    .enquiry input,
+    select {
+        width: 45%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .services {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .s {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .address_info .row {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hotel_packages .row {
+        flex-direction: column;
+    }
+    .photos .row {
+        flex-direction: column;
+    }
+    .contact {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:1028px) {
+    .enquiry {
+        left: 90px;
+        justify-content: center;
+        align-items: center;
+    }
+    .enquiry input,
+    select {
+        margin: 20px 0 0 40px;
+    }
+    select {
+        width: 26%;
+    }
+    .services {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .s {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
